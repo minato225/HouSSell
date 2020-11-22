@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Аренда Квартир</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <link href="img/иконка.ico" rel="icon">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Raleway:400,300,700,900" rel="stylesheet">
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">H<i class="fa fa-circle"></i>ME</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="main.html">Главная</a></li>
+          <li class="active"><a href="flats.html">Квартиры</a></li>
+          <li><a href="services.html">Сервисы</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a data-toggle="modal" data-target="#myModal" href="#myModal"><i class="fa fa-envelope-o"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="headerwrap1">
+    <div class="container">
+      <div class="row centered">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h1 >Познайте все возможности сайта</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- top! -->
+  <div id="dg">
+    <div class="container">
+      <div class="row centered">
+        <h4>Топ Квартир</h4><br>
+        <div class="col-lg-6">
+          <canvas id="canvas" height="130" width="130"></canvas>
+          <br>
+          <p><b>1 место</b></p>
+          <p><img src="img/популярность1.jpg"  height="300" width="500" alt="">
+          </div>
+
+          <div class="col-lg-6">
+            <canvas id="canvas2" height="130" width="130"></canvas>
+            <br>
+            <p><b>2 место</b></p>     
+            <p><img src="img/популярность2.jpg"  height="300" width="500" alt=""></p>
+          </div>
+
+          <div class="col-lg-6">
+            <canvas id="canvas3" height="130" width="130"></canvas>
+            <br>
+            <p><b>3 место</b></p>
+            <p><img src="img/популярность3.jpg" height="300" width="500"alt=""></p>
+          </div>
+
+          <div class="col-lg-6">
+            <canvas id="canvas4" height="130" width="130"></canvas>
+            <br>
+            <p><b>4 место</b></p>
+            <p><img src="img/популярность4.jpg"  height="300" width="500" alt=""></p>
+          </div> 
+
+        </div>
+      </div>
+    </div>
+    <!-- read more -->
+    <div class="card centered">
+      <p>
+        <h2 class="centered">1 место</h2>
+          Однокомнатная квартира Куприянова ул. 9 (Московский район) Материал стен: кирпичный. Год постройки: 1964. Этаж: 4/5, балкон Общая площадь: 30.96. Жилая площадь: 20.46. Площадь кухни: 5.71. Высота потолка: 2.5. Дом расположен в одном из востребованных районов Минска. Капитальный ремонт в 2020 году. Металлическая входная дверь. Чистый подъезд. Микрорайон с развитой инфраструктурой. Рядом есть всё необходимое для комфортной жизни: детские сады, школы, магазины. Прямая продажа<span id="dots1">...</span><span id="more1">
+        <h2 class="centered">2 место</h2>
+          Двухкомнатная квартира в  доме 2017 года постройки.  Входная металлическая дверь, межкомнатные двери МДФ. В оконных проемах установлены стеклопакеты с профилем ПВХ.    Напольное покрытие - линолеум, плитка.  Комбинированные потолки со встроенными осветительными приборами.  Подключены приборы учета воды. Автономное отопление.
+        <h2 class="centered">3 место</h2>
+          Инфраструктура соответствует всем требованиям комфортной жизни: детские сады, школы, магазины, банки, аптеки. Хорошее транспортное сообщение: автобусы,  маршрутные такси ( интервал движения -  каждые 15 минут), электрички.
+        <h2 class="centered">4 место</h2>
+          Однокомнатная квартира Герасименко ул. 52 (<strong>Заводской район</strong>) Материал стен: панельный. Год постройки: 1985. Этаж: 7/9, лоджия застекленная и обшита сайдингом. Общая площадь: 32.7. Жилая площадь: 17.7. Площадь кухни: 8.3. Высота потолка: 2.56. В квартире сделан косметический ремонт. В оконных проемах установлены стеклопакеты ПВХ, входная металлическая дверь, межкомнатные двери МДФ. На полу-ламинат. Два вместительных шкафа-купе. В санузле заменили трубы и смесители, установлены счетчики учета воды. Домофон.</span>
+      </p>
+       <button id="btn1" onclick="readMore1()">Подробнее</button>
+    </div>
+            <br><br><br>
+    <!-- FOOTER -->
+    <div id="f">
+      <div class="container">
+        <div class="row centered">
+          <a href="https://twitter.com/explore"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+          <a href="https://vk.com/feed"><i class="fa fa-vk"></i></a>
+          <br>          
+          <a href="https://www.apple.com/ru/ios/app-store"><img src="img/appstore.png" class="dot" width="120" height="40"></a>
+          <a href="https://play.google.com/store/apps/details?id=by.nikolaenko.ineedaflat&hl=ru"><img src="img/гуголстор.png" class="dot" width="120" height="40"></a> 
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL FOR CONTACT -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Обратная связь</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row centered">
+              <p>Мы доступны 24/7, обращатесь!</p>
+              <p>СлучайнаяУлица д.1 кв.1<br/> Беларусь. Минск<br/> +375 88 888-88-88<br/> contact@example.com</p>
+
+              <form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
+                <div class="form-group">
+                  <label for="contact-name">Имя</label>
+                  <input type="name" name="name" class="form-control" id="contact-name" placeholder="Имя" data-rule="minlen:4" data-msg="Как минимум 4 символа" >
+                  <div class="validate"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email">Ваш Email</label>
+                  <input type="email" name="email" class="form-control" id="contact-email" placeholder="Ваш Email" data-rule="email" data-msg="Введите коректный адрес">
+                  <div class="validate"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-message">Ваше сообщение</label>
+                  <textarea class="form-control" name="message" id="contact-message" placeholder="Ваше сообщение" rows="5" data-rule="required" data-msg="Напишите хоть что-то"></textarea>
+                  <div class="validate"></div>
+                </div>
+
+                <div class="loading"></div>
+                <div class="error-message"></div>
+                <div class="sent-message">Ваше сообщение было отправлено успешно. Спасибо!</div>
+
+                <div class="form-send">
+                  <button type="submit" class="btn btn-large">Отправить</button>
+                </div>
+              </form>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="copyrights">
+    <div class="container">
+      <p>
+        &copy; Copyrights <strong>Doskoch Roman</strong>. All Rights Reserved
+      </div>
+    </div>
+    <a href="#" class="back-to-top"></a>
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/php-mail-form/validate.js"></script>
+    <script src="lib/chart/chart.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+
+  </body>
+  </html>
